@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/GSG-G10/mohammed-haroon-reddit#readme",
   "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "joi": "^17.4.2"
   }
 }
