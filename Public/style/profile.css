@@ -1,0 +1,12 @@
+.post-content{
+    background-color: white;
+    width: 26%;
+    margin-top: 1rem;
+}
+
+.user-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
