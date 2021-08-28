@@ -94,12 +94,19 @@ body{
 .profile{
     padding: 14px;
 }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 
+}
 .post-card{
     background-color: white;
     display: flex;
-    width: 500px;
+    width: 30%;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .vote{
@@ -118,11 +125,10 @@ body{
 }
 .post-username{
     padding-top: 1rem;
-    padding-bottom: 1rem;
-
-
 }
-
+.votes{
+    padding-bottom: 1rem;
+}
 
 .content{
     padding-bottom: 1rem;
