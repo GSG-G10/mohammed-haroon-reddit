@@ -95,26 +95,36 @@ body{
     padding: 14px;
 }
 
-
-
-
-
 .post-card{
     background-color: white;
     display: flex;
     width: 500px;
-    
+    justify-content: space-between;
+     margin: 50px; /*   --------------   must remove  */
 }
 
 .vote{
     display: flex;
     flex-direction: column;
     width: 10%;
+}
 
-}
 .post-content{
-    width: 70%;
+    width: 80%;
+    padding: 1.5rem;
 }
+
 .post-content img{
     max-width: 361px;
+}
+.post-username{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+}
+
+
+.content{
+    padding-bottom: 1rem;
 }
