@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #9fa1a3;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    width: 8.5rem;
+    /* height: 2.5rem; */
+    object-fit: cover;
+}
+
+
+.search-input-container {
+    display: flex;
+    width: 50%;
+    margin: 0.4rem 0;
+    transition: all 1s;
+    border-radius: 9px;
+    background-color: #dae0e648;
+    justify-content: space-around;
+}
+.search-input-container:hover {
+    border: 2px solid #138deb;
+}
+
+
+.search-input {
+    outline: none;
+    padding: 0.5rem;
+    width: 92%;
+    border: none;
+    font-size: 16px;
+    background-color: #dae0e609;
+  }
+
+
+
+.sign-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+.btn{
+    height: 2.1rem;
+    width: 7rem;
+    font-size: 15px;
+    border: 2px solid #0b7ed5;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 0.4rem 1.5rem;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+
+
+.login {
+    margin-right: 1rem;
+    background-color: white;
+    color: #0b7ed5;
+
+}
+.login:hover {
+    background-color: #0b7dd512;
+}
+  
+.sign-up {
+    background-color: #0b7ed5;
+    color: white;
+    border-radius: 30px;
+}
+.sign-up:hover {
+    background-color: #0b7dd5cd;
+}
+
+.profile{
+    padding: 14px;
+}
+
+
+
+
+
+.post-card{
+    background-color: white;
+    display: flex;
+    width: 500px;
+    
+}
+
+.vote{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+
+}
+.post-content{
+    width: 70%;
+}
+.post-content img{
+    max-width: 361px;
+}
