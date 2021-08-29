@@ -2,6 +2,11 @@ require('env2')('.env');
 const { Pool } = require('pg');
 
 const { NODE_ENV, DATABASE_URL_DEV,DATABASE_URL_PROD, } = process.env;
+
+if (NODE_ENV === undefined) {
+  NODE_ENV = 'development'
+}
+
 let dbUrl = '';
 switch (NODE_ENV) {
   case 'development':
@@ -16,8 +21,9 @@ switch (NODE_ENV) {
   default:
     throw new Error('There\'s no environment');
 }
+
 const options = {
-  connectionString: process.env.DATABASE_URL,
-  ssl: true,
+  connectionString: dbUrl,
+  ssl: false,
 };
 module.exports = new Pool(options);
