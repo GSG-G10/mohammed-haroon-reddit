@@ -19,8 +19,5 @@ const postSchema = Joi.object({
     content: Joi.string().min(20).max(2000).required(),
     imageUrl : Joi.URL().required(),
 });
-  
-
-
 
 module.exports = { loginSchema, singupSchema , postSchema };
