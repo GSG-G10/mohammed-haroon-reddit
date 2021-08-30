@@ -18,16 +18,16 @@
 <body class="body">
 
 <section class="login-page">
-    <form method="POST" action="/sginup">
+    <form method="POST" action="/signup">
       <lottie-player src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"  background="transparent"  speed="1"  style="justify-content: center;" loop  autoplay></lottie-player>
-      <input type="text" placeholder="&#xf007; Full name"/>
-      <input type="text" placeholder="&#xf007;  username"/>
-      <input type="email" placeholder="&#xf199;  email"/>
+      <input type="text" name="name" placeholder="&#xf007; Full name"/>
+      <input type="text" name="username"  placeholder="&#xf007;  username"/>
+      <input type="email" name="email" placeholder="&#xf199;  email"/>
 
-      <input type="password" id="password" placeholder="&#xf023;  password"/>
-      <input type="password" id="password" placeholder="&#xf023;  confirm password"/>
+      <input type="password" name="password" id="password" placeholder="&#xf023;  password"/>
+      <input type="password" name="confirmPassword" id="password" placeholder="&#xf023;  confirm password"/>
 
-      <button>SIGN UP</button>
+      <button type="submit">SIGN UP</button>
       <p class="message"></p>
     </form>
       
