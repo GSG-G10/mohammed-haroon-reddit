@@ -1,7 +1,7 @@
-const { addPostQuery, } = require('../database/Queries')
+const { addPostQuery,getIdQuery } = require('../database/Queries')
 
 
 module.exports = (req, res) => {
-    addPostQuery(req.body)
-    res.redirect('/')
-  };
+  getIdQuery(req.cookies.username).then(result => addPostQuery(result.rows[0].id,req.query.title,req.query.content,req.query.imageurl))
+  res.redirect('/')
+};

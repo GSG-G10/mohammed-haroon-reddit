@@ -5,9 +5,18 @@ module.exports = (req, res) => {
     getPasswordQuery(req.body.username)
     .then((passw)=> {
         comparePassword(req.body.password,passw.rows[0].password)
-        .then(result => console.log(result))
-        .then(loginToken(req, res)) 
-        .catch(err => console.log(err))
+        .then(result => {
+            if (result ===true){
+                loginToken(req, res)
+            }else{
+                res.redirect('/login.html')
+            }
+        })
+        .catch(error => {
+            res.redirect('/login.html')
+        })
     })
-    .catch(err => console.log(err))
+    .catch(error => {
+        res.redirect('/login.html')
+    })
 };
