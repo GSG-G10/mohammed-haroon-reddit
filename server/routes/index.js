@@ -1,11 +1,13 @@
 const router = require('express').Router();
 
-const { homePage,signup,deletePost,getPosts } = require('../controllers');
-
+const { homePage,signup,deletePost,getPosts,login } = require('../controllers');
+const checkIsUser = require('../middlewares/check-if-user')
 router.get('/',homePage);
 router.post('/signup',signup);
-router.get('/deletePost',deletePost);
-router.get('/getPosts',getPosts);
+router.post('/login',login);
+
+router.get('/deletePost',checkIsUser,deletePost);
+router.get('/getPosts',checkIsUser,getPosts);
 
 
 
