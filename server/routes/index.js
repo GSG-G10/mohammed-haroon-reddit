@@ -12,6 +12,9 @@ router.get('/getPosts',checkIsUser,getPosts);
 router.get('/createpost',checkIsUser,createpost);
 router.get('/profiledata/:username',profiledata);
 router.get('/profilepage/:username',profilepage);
+router.post('/logout', (req, res) => {
+  res.clearCookie('logged').redirect('/');
+});
 profilepage
 
 module.exports = router;
