@@ -2,6 +2,8 @@ const lognBtn = document.querySelector('.login')
 const signup = document.querySelector('.sign-up')
 const bgOverlay = document.querySelector('.bg-overlay');
 const logOutForm = document.querySelector('.log-out-form')
+const faUserAlt = document.querySelector('.fa-user-alt')
+const userNameDom = document.querySelector('.user-name-dom')
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -25,7 +27,10 @@ fetch('/checkuser')
             logOutForm.style.display = 'block'
             lognBtn.setAttribute("onclick","openForm()");
             signup.style.display = 'none';
+            faUserAlt.style.display = 'none'
+            userNameDom.textContent = document.cookie.split('=')[1]
             console.log(document.cookie.split('=')[1])
+
           }
       }else{
         console.log('not login')
