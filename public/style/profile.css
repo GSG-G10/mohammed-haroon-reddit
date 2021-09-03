@@ -1,12 +1,96 @@
-.post-content{
-    background-color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 2000px;
+    background-color: #ebebeb7a;
+  }
+  .post-content {
+    background-color: rgb(255, 255, 255);
     width: 26%;
     margin-top: 1rem;
-}
-
-.user-posts{
+  }
+  
+  .user-posts {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
+  }
+  .header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
     
-}
+  }
+  .header > div > img {
+    width: 130px;
+  }
+  .search-input {
+    border: 1px solid rgb(79, 79, 79);
+    height: 3rem;
+    outline: none;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 11px;
+    width: 600px;
+    font-size: 16px;
+    background-color: #dae0e609;
+  }
+  h1 {
+    background-color: #acc3c4;
+    box-shadow:-13px 3px 31px #b4b4b4;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+  .sign-container{
+    margin-top: 0.5rem;
+  }
+  .main-container{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .profile-info {
+    padding: 1rem;
+    order: 1;
+    width: 30%;
+  }
+  .profile-info > img {
+    border-radius: 50%;
+  }
+  .name{
+    padding: 0.7rem 0;
+    color: rgb(79 79 79);
+  }
+  .username{
+    padding: 0.7rem 0;
+    color: rgb(79 79 79);
+  }
+  .email{
+    padding: 0.7rem 0;
+    color: rgb(79 79 79);
+  }
+  .user-posts {
+  }
+  .post-content {
+    margin-left: 1.8rem;
+    padding: 0.5rem;
+    width: 90%;
+  }
+  .content{
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  .post-username{
+    padding-top: 1rem ;
+  }
+  .fa-trash{
+    padding: 1rem 0;
+  }
